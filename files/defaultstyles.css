@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+
+a:link, a:visited {
+	text-decoration:none;
+	color:#065388;
+}
+a:hover {
+	color:#990000;	
+}
+a.current:link, a.current:visited {
+	color:#111;
+	font-weight:bold;
+}
+img { border:none; }
+
+body {
+	margin:0;
+	padding:0;
+	background-color:#888;
+	color:#333;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+
+#container {
+	width:1080px;
+	margin:auto;
+	font-size:14px;
+	position: relative;
+}
+#ucb {
+}
+#wrapper {
+ box-shadow: 0 0 5px #666;
+ -webkit-box-shadow: 0 0 5px #666;
+ -moz-box-shadow: 0 0 5px #666;
+ -moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	margin:5px 0;
+	overflow:hidden;
+
+}	
+#banner {
+	color:#FFF;
+	padding:15px;
+	
+	
+	
+	background-color:#FFF;
+	margin:0;
+	background-image: url(cuphoto.jpg);
+}
+h1 {
+	margin:0;
+	padding: 0;
+	font-size:30px;
+	
+}
+#banner p {
+	margin:0;
+	text-transform: uppercase;
+	font-size:14px;
+}
+#nav {
+      background:#222;
+   overflow:hidden;
+   height: 40px;
+}
+#nav ul {
+  
+   list-style:none;
+   margin:0;
+   padding:0;
+  
+}
+#nav ul li {
+   display:inline;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+  
+}
+#nav ul li a {
+   display:block;
+   margin:0;
+   padding:0px 10px;
+   color:#fff;
+   text-decoration:none;
+   line-height:40px;
+}
+#nav ul li a:hover {
+   background:#FFF;
+   color:#333;
+}
+#page {
+	background-color:#FFF;
+	overflow:auto;
+	padding:15px 0;
+	clear: both;
+	/*
+	-moz-border-radius-bottomleft:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	-webkit-border-bottom-right-radius:10px;
+	*/
+}
+#sidebar {
+	min-width:210px;
+	margin:0 15px;
+	float:right;
+	line-height:140%;
+	background-color:#EEE;
+	border: 1px solid #E5E5E5;
+}
+
+#sidebar h3, #sidebar p {
+	padding:0 10px;
+}
+#content {
+	margin-left:15px;
+	margin-right:15px;
+	line-height:160%;
+}
+#footer {
+	padding:15px;	
+	overflow:auto;
+	color:#FFF;
+	font-size:90%;
+	text-align:right;
+}
+#footer img {
+	float:left; 
+	margin-right:15px;
+}
+
+h2 {
+	margin-top:0;
+	color:#494949;
+	font-weight:normal;
+	font-size:200%;
+}
+
+.right {
+	float:right;
+	margin: 0 0 15px 15px;
+}
+.left {
+	float:left;
+	margin:0 15px 15px 0;
+}
+
+#contentbar {
+	width:210px;
+	margin-top: 0;
+	margin-right: 15px;
+	margin-bottom: 0;
+	margin-left: 0px;
+	float:left;
+	line-height:140%;
+	background-color:#EEE;
+	border: 1px solid #E5E5E5;
+}
+
+#contentbar h3, #contentbar p {
+	padding:0 10px;
+}
+#fac_photo {margin-left:auto; margin-right:auto; display:block; padding:10px;}
+#banner {
+	 -moz-border-radius-topleft:10px;
+	-webkit-border-top-left-radius:10px;
+	-moz-border-radius-topright:10px;
+	-webkit-border-top-right-radius:10px;
+		
+}
+#page {
+	
+	-moz-border-radius-bottomleft:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	-webkit-border-bottom-right-radius:10px;
+
+}
+#banner p {padding-left:1em}
+/* uncomment the specific line to hide the content div on specific pages */
+/* .contentbar1 {display:none}  */
+ .contentbar2 {display:none}  
+/* .contentbar3 {display:none}  */
+/* .contentbar4 {display:none}  */
+/* .contentbar5 {display:none}  */
