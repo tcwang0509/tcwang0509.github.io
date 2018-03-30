@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Full Scene Material Segmentation</title>
+  </head>
+  <body>
+  <h2> Full Scene Material Segmentation Results </h2>
+    <h3>We show more examples of full scene material classification comparisons between 2D and light-field inputs. Compared with using 2D inputs, we can see that our light-field method produces more accurate prediction results.</h3>
+    <p>&nbsp;</p>
+  <table border="1" style="table-layout: fixed;">
+      <tr>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/legend.png" style="width:250px"><br>
+          <p>Legend</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../images/Paper/028.jpg" style="width:250px"><br>
+          <p>Input</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/gt_Paper_028.jpg" style="width:250px"><br>
+          <p>Ground Truth</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/2d_Paper_028.jpg" style="width:250px"><br>
+          <p>2D prediction</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/4d_Paper_028.jpg" style="width:250px"><br>
+          <p>LF prediction</p>
+          </p></td>
+      </tr>
+    </table>
+  <h3>&nbsp;</h3>  
+  <table border="1" style="table-layout: fixed;">
+      <tr>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/legend.png" style="width:250px"><br>
+          <p>Legend</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../images/Plastic/086.jpg" style="width:250px"><br>
+          <p>Input</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/gt_Plastic_086.jpg" style="width:250px"><br>
+          <p>Ground Truth</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/2d_Plastic_086.jpg" style="width:250px"><br>
+          <p>2D prediction</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/4d_Plastic_086.jpg" style="width:250px"><br>
+          <p>LF prediction</p>
+          </p></td>
+      </tr>
+    </table>
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/legend.png" style="width:250px"><br>
+          <p>Legend</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../images/Glass/020.jpg" style="width:250px"><br>
+          <p>Input</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/gt_Glass_020.jpg" style="width:250px"><br>
+          <p>Ground Truth</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/2d_Glass_020.jpg" style="width:250px"><br>
+          <p>2D prediction</p>
+          </p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> <img src="images/../full_scene/4d_Glass_020.jpg" style="width:250px"><br>
+          <p>LF prediction</p>
+          </p></td>
+      </tr>
+    </table>
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> 
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> 
+          <img src="images/../images/Stone/099.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> 
+          <img src="images/../full_scene/gt_Stone_099.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> 
+          <img src="images/../full_scene/2d_Stone_099.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> 
+          <img src="images/../full_scene/4d_Stone_099.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> 
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> 
+          <img src="images/../images/Water/073.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> 
+          <img src="images/../full_scene/gt_Water_073.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> 
+          <img src="images/../full_scene/2d_Water_073.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p> 
+          <img src="images/../full_scene/4d_Water_073.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>
+    
+    <p>&nbsp;</p>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Fabric/088.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Fabric_088.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Fabric_088.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+      <img src="images/../full_scene/4d_Fabric_088.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Foliage/044.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Foliage_044.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Foliage_044.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Foliage_044.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Paper/030.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Paper_030.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Paper_030.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Paper_030.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>
+    
+  <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Fur/015.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Fur_015.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Fur_015.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Fur_015.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>  
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Wood/031.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Wood_031.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Wood_031.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Wood_031.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+  <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Glass/023.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Glass_023.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Glass_023.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Glass_023.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Water/081.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Water_081.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Water_081.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Water_081.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table> 
+    
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Stone/095.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Stone_095.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Stone_095.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Stone_095.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Glass/069.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Glass_069.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Glass_069.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Glass_069.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+  
+  <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Leather/057.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Leather_057.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Leather_057.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Leather_057.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Fur/074.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Fur_074.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Fur_074.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Fur_074.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>      
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Water/088.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Water_088.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Water_088.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Water_088.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>
+        
+  <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Paper/006.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Paper_006.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Paper_006.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Paper_006.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>           
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Wood/025.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Wood_025.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Wood_025.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Wood_025.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>        
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Plastic/024.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Plastic_024.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Plastic_024.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Plastic_024.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Leather/074.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Leather_074.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Leather_074.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Leather_074.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Glass/050.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Glass_050.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Glass_050.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Glass_050.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>
+    
+  <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Plastic/083.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Plastic_083.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Plastic_083.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Plastic_083.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Water/005.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Water_005.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Water_005.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Water_005.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Paper/099.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Paper_099.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Paper_099.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Paper_099.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>
+    
+  <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Sky/055.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Sky_055.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Sky_055.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Sky_055.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Glass/096.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Glass_096.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Glass_096.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Glass_096.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+  <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Stone/026.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Stone_026.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Stone_026.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Stone_026.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>
+    
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Leather/059.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Leather_059.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Leather_059.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Leather_059.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>    
+    
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Fur/094.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Fur_094.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Fur_094.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Fur_094.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Paper/051.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Paper_051.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Paper_051.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Paper_051.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>
+    
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Stone/047.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Stone_047.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Stone_047.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Stone_047.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Plastic/050.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Plastic_050.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Plastic_050.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Plastic_050.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Leather/096.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Leather_096.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Leather_096.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Leather_096.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Paper/071.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Paper_071.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Paper_071.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Paper_071.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>   
+    
+  <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Water/074.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Water_074.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Water_074.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Water_074.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>           
+    
+    <h3>&nbsp;</h3>
+  <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Wood/003.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Wood_003.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Wood_003.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Wood_003.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+  </table>
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Paper/095.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Paper_095.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Paper_095.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Paper_095.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+    </table>    
+    
+    <h3>&nbsp;</h3>
+    <table border="1" style="table-layout: fixed;">
+      <tr> <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/legend.png" style="width:250px"><br><p>Legend</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../images/Stone/042.jpg" style="width:250px"><br><p>Input</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/gt_Stone_042.jpg" style="width:250px"><br><p>Ground Truth</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/2d_Stone_042.jpg" style="width:250px"><br><p>2D prediction</p></p></td>
+        <td halign="center" style="word-wrap: break-word;" valign="top"><p>
+          <img src="images/../full_scene/4d_Stone_042.jpg" style="width:250px"><br><p>LF prediction</p></p></td></tr>
+</table>
