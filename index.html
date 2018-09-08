@@ -162,7 +162,7 @@ strong a:active {
       <tr height="20">
         <td>
           <p class="margin">&nbsp;</p>
-          <p class="content"><strong><a href="files/CV_Ting-Chun_Wang.pdf">CV</a></strong> | 
+          <p class="content">
           <strong><a href="https://github.com/tcwang0509/">GitHub</a></strong> | 
           <strong><a href="https://scholar.google.com/citations?user=ajXAb54AAAAJ&hl=en">Google Scholar</a></strong> </p>
         </td>
@@ -185,16 +185,121 @@ strong a:active {
 
 <br>
 
+<p id="sect-news" class="title-large">News</p>
+<ul>
+  <li><p class="content">Our vid2vid paper is accepted to NIPS 2018!</li>
+  <li><p class="content">Our inpainting paper is accepted to ECCV 2018!</li>
+  <li><p class="content">Received NVIDIA Pioneer Research Award from Jensen Huang.</li>
+  <li><p class="content">Won 1st place in <a href="http://bdd-data.berkeley.edu/wad-2018.html" target="_blank" rel="nofollow" class="caption-2">WAD Challenge</a>, Domain Adaptation for Semantic Segmentation Competition, CVPR 2018</li>
+  <li><p class="content">Presented our <a href="https://youtu.be/sIkUzmgUaxc?t=1200" target="_blank" rel="nofollow" class="caption-2">pix2pixHD</a> work at CVPR 2018.</li>
+  <li><p class="content">Check out our <a href="https://twitter.com/NVIDIAAIDev/status/1009873840246280192" target="_blank" rel="nofollow" class="caption-2">face demo</a> at CVPR 2018!</li>
+<br>
+</ul>
 
 <p id="sect-publications" class="title-large">Publications</p>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">   
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">  
+
+      <tr> <td width="20%" valign="top"><a href="https://raw.github.com/NVIDIA/vid2vid/master/imgs/teaser.gif" class="hoverZoomLink"><img src="https://github.com/NVIDIA/vid2vid/raw/master/imgs/teaser.gif" alt="vid2vid_nips" width="100%" border="1"></a>
+        <td width="80%" valign="top">
+        <p>
+        <heading>Video-to-Video Synthesis</heading></a><br>
+        <p class="margin">&nbsp;</p>
+        <p class="content"><strong>Ting-Chun Wang</strong>, <a href="http://mingyuliu.net/">Ming-Yu Liu</a>, <a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a>, <a href="https://liuguilin1225.github.io/">Guilin Liu</a>, 
+          Andrew Tao, <a href="http://jankautz.com/">Jan Kautz</a>, <a href="http://catanzaro.name/">Bryan Catanzaro</a></p>
+        <p class="margin-small">&nbsp;</p>
+        <p class="content"><em>Advances in Neural Information Processing Systems (<strong>NIPS</strong>)</em>, 2018</p>
+        <p class="margin">&nbsp;</p>
+        
+        <div class="paper" id="vid2vid_nips">    
+        <p class="content">    
+        <strong><a href="https://tcwang0509.github.io/vid2vid/">project</a></strong> |
+        <strong><a href="https://tcwang0509.github.io/vid2vid/paper_vid2vid.pdf">paper</a></strong> |
+        <strong><a href="https://arxiv.org/pdf/1808.06601.pdf">arXiv</a></strong> | 
+        <strong><a href="https://github.com/NVIDIA/vid2vid">github</a></strong> |
+        <strong><a href="https://goo.gl/KmFLBS">YouTube</a></strong> |                
+        <strong><a href="javascript:toggleblock('vid2vid_nips_abs')">abstract</a></strong> |        
+        <strong><a shape="rect" href="javascript:togglebib('vid2vid_nips')" class="togglebib">bibtex</a></strong> </p>
+        <p align="justify"> <i id="vid2vid_nips_abs"> We study the problem of video-to-video synthesis, whose goal is to learn a mapping function from an input source video (e.g., a sequence of semantic segmentation masks) to an output photorealistic video that precisely depicts the content of the source video. While its image counterpart, the image-to-image synthesis problem, is a popular topic, the video-to-video synthesis problem is less explored in the literature. Without understanding temporal dynamics, directly applying existing image synthesis approaches to an input video often results in temporally incoherent videos of low visual quality. In this paper, we propose a novel video-to-video synthesis approach under the generative adversarial learning framework. Through carefully-designed generator and discriminator architectures, coupled with a spatio-temporal adversarial objective, we achieve high-resolution, photorealistic, temporally coherent video results on a diverse set of input formats including segmentation masks, sketches, and poses. Experiments on multiple benchmarks show the advantage of our method compared to strong baselines. In particular, our model is capable of synthesizing 2K resolution videos of street scenes up to 30 seconds long, which significantly advances the state-of-the-art of video synthesis. Finally, we apply our approach to future video prediction, outperforming several state-of-the-art competing systems. </i></p>
+        <pre xml:space="preserve" style="display: none;">
+@inproceedings{wang2018vid2vid,
+   author    = {Ting-Chun Wang and Ming-Yu Liu and Jun-Yan Zhu and Guilin Liu
+                and Andrew Tao and Jan Kautz and Bryan Catanzaro},
+   title     = {Video-to-Video Synthesis},
+   booktitle = {Advances in Neural Information Processing Systems (NIPS)},   
+   year      = {2018},
+}
+      </pre> </div> </td> </tr>
+
+      <tr> <td width="20%" valign="top"><a href="papers/arxiv/ds_teaser.jpg" class="hoverZoomLink"><img src="papers/arxiv/ds_teaser.jpg" alt="ds_arxiv" width="100%" border="1"></a>
+        <td width="80%" valign="top">
+        <p>
+        <heading>Domain Stylization: A Strong, Simple Baseline for Synthetic to Real Image Domain Adaptation</heading></a><br>
+        <p class="margin">&nbsp;</p>
+        <p class="content">Aysegul Dundar, <a href="http://mingyuliu.net/">Ming-Yu Liu</a>, <strong>Ting-Chun Wang</strong>, John Zedlewski, <a href="http://jankautz.com/">Jan Kautz</a></p>
+        <p class="margin-small">&nbsp;</p>
+        <p class="content">arXiv preprint arXiv:1807.09384</p>
+        <p class="margin">&nbsp;</p>
+        
+        <div class="paper" id="ds_arxiv">    
+        <p class="content">                    
+        <strong><a href="https://arxiv.org/abs/1807.09384">arXiv</a></strong> |   
+        <strong><a href="javascript:toggleblock('ds_arxiv_abs')">abstract</a></strong> |        
+        <strong><a shape="rect" href="javascript:togglebib('ds_arxiv')" class="togglebib">bibtex</a></strong> </p>
+        <p align="justify"> <i id="ds_arxiv_abs"> Deep neural networks have largely failed to effectively utilize synthetic data when applied to real images due to the covariate shift problem. In this paper, we show that by applying a straightforward modification to an existing photorealistic style transfer algorithm, we achieve state-of-the-art synthetic-to-real domain adaptation results. We conduct extensive experimental validations on four synthetic-to-real tasks for semantic segmentation and object detection, and show that our approach exceeds the performance of any current state-of-the-art GAN-based image translation approach as measured by segmentation and object detection metrics. Furthermore we offer a distance based analysis of our method which shows a dramatic reduction in Frechet Inception distance between the source and target domains, offering a quantitative metric that demonstrates the effectiveness of our algorithm in bridging the synthetic-to-real gap. </i></p>
+        <pre xml:space="preserve" style="display: none;">
+@article{dundar2018domain,
+  title={Domain Stylization: A Strong, Simple Baseline for Synthetic to Real Image Domain Adaptation},
+  author={Dundar, Aysegul and Liu, Ming-Yu and Wang, Ting-Chun and Zedlewski, John and Kautz, Jan},
+  journal={arXiv preprint arXiv:1807.09384},
+  year={2018}
+}
+      </pre> </div> </td> </tr>
+
+      <tr> <td width="20%" valign="top"><a href="papers/ECCV18/teaser.jpg" class="hoverZoomLink"><img src="papers/ECCV18/teaser.jpg" alt="parconv_eccv" width="100%" border="1"></a>
+        <td width="80%" valign="top">
+        <p>
+        <heading>Image Inpainting for Irregular Holes Using Partial Convolutions</heading></a><br>
+        <p class="margin">&nbsp;</p>        
+        <p class="content"><a href="https://liuguilin1225.github.io/">Guilin Liu</a>, Fitsum A. Reda, Kevin J. Shih, <strong>Ting-Chun Wang</strong>, Andrew Tao, <a href="http://catanzaro.name/">Bryan Catanzaro</a></p>
+        <p class="margin-small">&nbsp;</p>
+        <p class="content"><em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2018        
+        <p class="margin">&nbsp;</p>
+        
+        <div class="paper" id="partconv_eccv">    
+        <p class="content">            
+        <strong><a href="http://masc.cs.gmu.edu/wiki/partialconv">project</a></strong> |        
+        <strong><a href="https://arxiv.org/pdf/1804.07723.pdf">arXiv</a></strong> |         
+        <strong><a href="https://www.youtube.com/watch?v=gg0F5JjKmhA">YouTube</a></strong> |                
+        <strong><a href="javascript:toggleblock('partconv_eccv_abs')">abstract</a></strong> |        
+        <strong><a shape="rect" href="javascript:togglebib('partconv_eccv')" class="togglebib">bibtex</a></strong> </p>
+        <p align="justify"> <i id="partconv_eccv_abs"> Existing deep learning based image inpainting methods use
+        a standard convolutional network over the corrupted image, using convolutional
+        filter responses conditioned on both valid pixels as well as the
+        substitute values in the masked holes (typically the mean value). This
+        often leads to artifacts such as color discrepancy and blurriness. Postprocessing
+        is usually used to reduce such artifacts, but are expensive and
+        may fail. We propose the use of partial convolutions, where the convolution
+        is masked and renormalized to be conditioned on only valid pixels.
+        We further include a mechanism to automatically generate an updated
+        mask for the next layer as part of the forward pass. Our model outperforms
+        other methods for irregular masks. We show qualitative and
+quantitative comparisons with other methods to validate our approach. </i></p>
+        <pre xml:space="preserve" style="display: none;">          
+@inproceedings{liu2018image,
+   author    = {Liu, Guilin and Reda, Fitsum A and Shih, Kevin J 
+                and Wang, Ting-Chun and Tao, Andrew and Catanzaro, Bryan},
+   title     = {Image inpainting for irregular holes using partial convolutions},
+   booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},   
+   year      = {2018},
+}
+      </pre> </div> </td> </tr>
 
       <tr> <td width="20%" valign="top"><a href="https://raw.github.com/NVIDIA/pix2pixHD/master/imgs/teaser_style.gif" class="hoverZoomLink"><img src="https://github.com/NVIDIA/pix2pixHD/raw/master/imgs/teaser_720.gif" alt="pix2pixHD_cvpr" width="100%" border="1"></a>
         <td width="80%" valign="top">
         <p>
         <heading>High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs</heading></a><br>
         <p class="margin">&nbsp;</p>
-        <p class="content"><strong>Ting-Chun Wang</strong>, <a href="http://mingyuliu.net/">Ming-Yu Liu</a>, <a href="http://people.eecs.berkeley.edu/~junyanz/">Jun-Yan Zhu</a>, Andrew Tao, <a href="http://jankautz.com/">Jan Kautz</a>, 
+        <p class="content"><strong>Ting-Chun Wang</strong>, <a href="http://mingyuliu.net/">Ming-Yu Liu</a>, <a href="http://people.csail.mit.edu/junyanz/">Jun-Yan Zhu</a>, Andrew Tao, <a href="http://jankautz.com/">Jan Kautz</a>, 
         <a href="http://catanzaro.name/">Bryan Catanzaro</a></p>
         <p class="margin-small">&nbsp;</p>
         <p class="content"><em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>)</em>, 2018
@@ -208,7 +313,7 @@ strong a:active {
         <strong><a href="https://arxiv.org/pdf/1711.11585.pdf">arXiv</a></strong> | 
         <strong><a href="papers/CVPR18/pix2pixHD_slides.pptx">slides</a></strong> |<br>
         <strong><a href="https://github.com/NVIDIA/pix2pixHD">github</a></strong> |
-        <strong><a href="https://goo.gl/YWuH8r">Youtube</a></strong> |                
+        <strong><a href="https://goo.gl/YWuH8r">YouTube</a></strong> |                
         <strong><a href="javascript:toggleblock('pix2pixHD_cvpr_abs')">abstract</a></strong> |        
         <strong><a shape="rect" href="javascript:togglebib('pix2pixHD_cvpr')" class="togglebib">bibtex</a></strong> </p>
         <p align="justify"> <i id="pix2pixHD_cvpr_abs"> We present a new method for synthesizing high-resolution
@@ -560,6 +665,9 @@ organization={Springer}
 hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
+hideblock('vid2vid_nips_abs');
+hideblock('ds_arxiv_abs');
+hideblock('partconv_eccv_abs');
 hideblock('pix2pixHD_cvpr_abs');
 hideblock('lfv_sig_abs');
 hideblock('brdf_pami_abs');
@@ -583,6 +691,10 @@ hideblock('glossy_abs');
 
 
 <p class="title-large">Talks</p>
+<p class="content"><strong><a href="https://youtu.be/sIkUzmgUaxc?t=1200" target="_blank" rel="nofollow" class="caption-2">High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs (pix2pixHD)</a></strong></p>
+<p class="content">CVPR (2018)</p>
+<p class="margin">&nbsp;</p>
+
 <p class="content"><strong><a href="https://drive.google.com/open?id=0BzhS93j2LkNaVkpxcVpIOGhfeTQ">Beyond Photo-Consistency: Shape, Reflectance, and Material Estimation Using Light-Field Cameras</a></strong></p>
 <p class="content">Dissertation talk (2017)</p>
 <p class="margin">&nbsp;</p>
