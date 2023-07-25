@@ -176,8 +176,8 @@ strong a:active {
 <table border="0">
   <tbody>
     <tr>
-      <td width="1200"> <p align="justify" class="content">I'm a senior research scientist at NVIDIA, working on computer vision, machine learning and computer graphics. <br>
-        I received my PhD from University of California, Berkeley in 2017, advised by Professor <strong><a href="https://cseweb.ucsd.edu/~ravir/" target="_blank" rel="nofollow" class="caption-2">Ravi Ramamoorthi</a></strong> and <strong><a href="http://www.eecs.berkeley.edu/~efros/" target="_blank" rel="nofollow" class="caption-2">Alexei A. Efros</a></strong>. <br>
+      <td width="1200"> <p align="justify" class="content">I'm a senior research scientist at the <strong><a href="https://research.nvidia.com/labs/dir/">Deep Imagination Research (DIR)</a></strong> group at NVIDIA, working on computer vision, machine learning and computer graphics. <br>
+        I received my PhD from University of California, Berkeley in 2017, advised by Professor <a href="https://cseweb.ucsd.edu/~ravir/" target="_blank" rel="nofollow" class="caption-2">Ravi Ramamoorthi</a> and <a href="http://www.eecs.berkeley.edu/~efros/" target="_blank" rel="nofollow" class="caption-2">Alexei A. Efros</a>. <br>
         My recent research focus is on using generative adversarial models to synthesize realistic images and videos, with applications to rendering, visual manipulations and beyond.<br>
         <!--<em><b>I'm looking for interns to work on GAN related problems. If you're interested, please send me your resume and a brief introduction about yourself.</strong></b></p>-->
         <br>
@@ -189,10 +189,12 @@ strong a:active {
 
 <p id="sect-news" class="title-large">News</p>
 <ul>
-  <li><p class="content">Two papers accepted at NeurIPS 2022!</li>
-  <li><p class="content">Our portrait relighting work <a href="https://deepimagination.cc/Lumos/"><strong>Lumos</strong></a> is accepted by SIGGRAPH Asia 2022! </li>
+  <li><p class="content">Two papers accepted at ICCV 2023!</li>
+  <li><p class="content">I am co-organizing the <strong><a href="https://ai4cc.net/">AI4CC workshop</a></strong> at CVPR 2023.</li>
+  <!-- <li><p class="content">Two papers accepted at NeurIPS 2022!</li>
+  <li><p class="content">Our portrait relighting work <a href="https://research.nvidia.com/labs/dir/lumos/"><strong>Lumos</strong></a> is accepted by SIGGRAPH Asia 2022! </li>
   <li><p class="content">GauGAN2 and GauGAN360 (demos for PoE-GAN) are now featured in <a href="https://www.nvidia.com/en-us/research/ai-demos/"><strong>NVIDIA AI Playground Demos</strong></a>. </li>
-  <li><p class="content">Our <a href="https://blogs.nvidia.com/blog/2021/08/10/siggraph-real-time-live-demo/"><strong>digital avatar system demo</strong></a> featuring face-vid2vid won the Best-in-Show Award at SIGGRAPH RealTimeLive 2021!</li>
+  <li><p class="content">Our <a href="https://blogs.nvidia.com/blog/2021/08/10/siggraph-real-time-live-demo/"><strong>digital avatar system demo</strong></a> featuring face-vid2vid won the Best-in-Show Award at SIGGRAPH RealTimeLive 2021!</li> -->
   <!-- <li><p class="content">Vid2vid-Cameo is now featured in <a href="https://www.nvidia.com/en-us/research/ai-demos/"><strong>NVIDIA AI Playground Demos</strong></a>. Check it out to play with face and gaze redirection yourself! </li>
   <li><p class="content">I was selected as an outstanding reviewer for CVPR 2021. Thank you Area Chairs!</li>
   <li><p class="content">Our <a href="https://nvlabs.github.io/face-vid2vid"><strong>face-vid2vid paper</strong></a> is accepted by CVPR 2021 as an oral presentation!</li> -->
@@ -214,7 +216,57 @@ strong a:active {
 
 <p id="sect-publications" class="title-large">Selected Publications</p>
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-  <tr> <td width="20%" valign="top"><a href="https://deepimagination.cc/implicit_warping/data/ted/multi_iframe/halfbody_eval-ted_talk-0R9zjn9BBvA_S-6194_E-6354_H-625_W-626-000000.mp4_sources.jpg" class="hoverZoomLink"><img src="https://deepimagination.cc/implicit_warping/data/ted/multi_iframe/halfbody_eval-ted_talk-0R9zjn9BBvA_S-6194_E-6354_H-625_W-626-000000.mp4_sources.jpg" alt="implicit_warp" width="100%" border="1"></a>
+
+  <tr> <td width="20%" valign="top"><a href="https://grail.cs.washington.edu/projects/dreampose/static/videos/pose-demo/pose-dress1.gif" class="hoverZoomLink"><img src="https://grail.cs.washington.edu/projects/dreampose/static/videos/pose-demo/pose-dress1.gif" alt="dreampose" width="100%" border="1"></a>
+        <td width="80%" valign="top">
+        <p>
+        <heading>DreamPose: Fashion Image-to-Video Synthesis via Stable Diffusion</heading></a><br>
+        <p class="margin">&nbsp;</p>        
+        <p class="content"><a href="https://johannakarras.github.io/">Johanna Karras</a>, <a href="https://holynski.org/">Aleksander Holynski</a>, <strong>Ting-Chun Wang</strong>, <a href="https://www.irakemelmacher.com/">Ira Kemelmacher-Shlizerman</a></p>
+        <p class="margin-small">&nbsp;</p>
+        <p class="content"><em>International Conference on Computer Vision (<strong>ICCV</strong>)</em>, 2023
+        <p class="margin">&nbsp;</p>
+        
+        <div class="paper" id="dreampose">    
+        <p class="content">            
+        <strong><a href="https://grail.cs.washington.edu/projects/dreampose/">project</a></strong> |
+        <strong><a href="https://arxiv.org/abs/2304.06025">paper</a></strong> |
+        <strong><a href="https://github.com/johannakarras/DreamPose">code</a></strong> |
+        <strong><a shape="rect" href="javascript:togglebib('dreampose')" class="togglebib">bibtex</a></strong> </p>
+        <pre xml:space="preserve" style="display: none;">
+@inproceedings{karras2023dreampose,
+    title={{Dreampose: Fashion image-to-video synthesis via stable diffusion}},
+    author={Karras, Johanna and Holynski, Aleksander and Wang, Ting-Chun and Kemelmacher-Shlizerman, Ira},
+    booktitle={ICCV},
+    year={2023}
+}
+      </pre> </div> </td> </tr>
+
+    <tr> <td width="20%" valign="top"><a href="https://arunmallya.github.io/teasers/spacex.gif" class="hoverZoomLink"><img src="https://arunmallya.github.io/teasers/spacex.gif" alt="space" width="100%" border="1"></a>
+        <td width="80%" valign="top">
+        <p>
+        <heading>SPACE: Speech-driven Portrait Animation with Controllable Expression</heading></a><br>
+        <p class="margin">&nbsp;</p>        
+        <p class="content"><a href="https://research.nvidia.com/person/siddharth-gururani/">Siddharth Gururani</a>, <a href="https://arunmallya.github.io/">Arun Mallya</a>, <strong>Ting-Chun Wang</strong>, <a href="https://rafaelvalle.github.io/">Rafael Valle</a>, <a href="http://mingyuliu.net/">Ming-Yu Liu</a></p>
+        <p class="margin-small">&nbsp;</p>
+        <p class="content"><em>International Conference on Computer Vision (<strong>ICCV</strong>)</em>, 2023
+        <p class="margin">&nbsp;</p>
+        
+        <div class="paper" id="space">    
+        <p class="content">            
+        <strong><a href="https://research.nvidia.com/labs/dir/space/">project</a></strong> |
+        <strong><a href="https://arxiv.org/abs/2211.09809">paper</a></strong> |
+        <strong><a shape="rect" href="javascript:togglebib('space')" class="togglebib">bibtex</a></strong> </p>
+        <pre xml:space="preserve" style="display: none;">
+@inproceedings{gururani2022SPACE,
+    title={{SPACE: Speech-driven Portrait Animation with Controllable Expression}},
+    author={Siddharth Gururani and Arun Mallya and Ting-Chun Wang and Rafael Valle and Ming-Yu Liu},
+    booktitle={ICCV},
+    year={2023}
+}
+      </pre> </div> </td> </tr>
+
+  <tr> <td width="20%" valign="top"><a href="https://arunmallya.github.io/teasers/imwa.gif" class="hoverZoomLink"><img src="https://arunmallya.github.io/teasers/imwa.gif" alt="implicit_warp" width="100%" border="1"></a>
         <td width="80%" valign="top">
         <p>
         <heading>Implicit Warping for Animation with Image Sets</heading></a><br>
@@ -226,7 +278,7 @@ strong a:active {
         
         <div class="paper" id="implicit_warp">    
         <p class="content">            
-        <strong><a href="https://deepimagination.cc/implicit_warping/">project</a></strong> |
+        <strong><a href="https://research.nvidia.com/labs/dir/implicit_warping/">project</a></strong> |
         <strong><a href="https://arxiv.org/abs/2210.01794">paper</a></strong> |
         <strong><a shape="rect" href="javascript:togglebib('implicit_warp')" class="togglebib">bibtex</a></strong> </p>
         <pre xml:space="preserve" style="display: none;">
@@ -263,7 +315,7 @@ strong a:active {
 }
       </pre> </div> </td> </tr>
 
-  <tr> <td width="20%" valign="top"><a href="https://deepimagination.cc/Lumos/images/teaser.jpg" class="hoverZoomLink"><img src="https://deepimagination.cc/Lumos/images/teaser.jpg" alt="lumos" width="100%" border="1"></a>
+  <tr> <td width="20%" valign="top"><a href="https://research.nvidia.com/labs/dir/lumos/images/teaser.jpg" class="hoverZoomLink"><img src="https://research.nvidia.com/labs/dir/lumos/images/teaser.jpg" alt="lumos" width="100%" border="1"></a>
         <td width="80%" valign="top">
         <p>
         <heading>Learning to Relight Portrait Images via a Virtual Light Stage and Synthetic-to-Real Adaptation</heading></a><br>
@@ -275,7 +327,7 @@ strong a:active {
         
         <div class="paper" id="lumos">    
         <p class="content">            
-        <strong><a href="https://deepimagination.cc/Lumos/">project</a></strong> |
+        <strong><a href="https://research.nvidia.com/labs/dir/lumos/">project</a></strong> |
         <strong><a href="https://arxiv.org/abs/2209.10510">paper</a></strong> |
         <strong><a href="https://www.youtube.com/watch?v=uWSVpG0eKbU">YouTube</a></strong> |
         <strong><a href="http://imaginaire.cc/Lumos/">demo</a></strong> |
@@ -289,7 +341,7 @@ strong a:active {
 }
       </pre> </div> </td> </tr>
 
-  <tr> <td width="20%" valign="top"><a href="https://deepimagination.cc/PoE-GAN/images/samples/panorama/reflection.jpg" class="hoverZoomLink"><img src="https://deepimagination.cc/PoE-GAN/images/samples/panorama/reflection.jpg" alt="poegan" width="100%" border="1"></a>
+  <tr> <td width="20%" valign="top"><a href="https://research.nvidia.com/labs/dir/PoE-GAN/images/samples/panorama/reflection.jpg" class="hoverZoomLink"><img src="https://research.nvidia.com/labs/dir/PoE-GAN/images/samples/panorama/reflection.jpg" alt="poegan" width="100%" border="1"></a>
         <td width="80%" valign="top">
         <p>
         <heading>Multimodal Conditional Image Synthesis with Product-of-Experts GANs</heading></a><br>
@@ -301,7 +353,7 @@ strong a:active {
         
         <div class="paper" id="poegan">    
         <p class="content">            
-        <strong><a href="https://deepimagination.cc/PoE-GAN/">project</a></strong> |
+        <strong><a href="https://research.nvidia.com/labs/dir/PoE-GAN/">project</a></strong> |
         <strong><a href="https://arxiv.org/abs/2112.05130">paper</a></strong> |
         <strong><a href="https://www.youtube.com/watch?v=56aA_FaeAPY">YouTube</a></strong> |
         <strong><a href="http://imaginaire.cc/gaugan2/">demo</a></strong> |
@@ -986,7 +1038,8 @@ hideallbibs();
 
 <p class="content"><b>Tutorial/Workshop Co-organizer</b></p>
 <ul>
-<li><p class="content">CVPR 2022: <strong><a href="https://ai4cc.net/">AI for Content Creation Workshop</a></strong></p></li>
+<li><p class="content">CVPR 2023: <strong><a href="https://ai4cc.net/">AI for Content Creation Workshop</a></strong></p></li>
+<li><p class="content">CVPR 2022: <strong><a href="https://ai4cc.net/2022/">AI for Content Creation Workshop</a></strong></p></li>
 <li><p class="content">ECCV 2020: <strong><a href="https://nvlabs.github.io/eccv2020-mixed-precision-tutorial/">Tutorial on Accelerating Computer Vision with Mixed Precision</a></strong></p></li>
 <li><p class="content">ICCV 2019: <strong><a href="https://nvlabs.github.io/iccv2019-mixed-precision-tutorial/">Tutorial on Accelerating Computer Vision with Mixed Precision</a></strong></p></li>
 <li><p class="content">ICIP 2019: <strong><a href="https://mingyuliutw.github.io/icip2019-image-translation-tutorial/">Tutorial on Image-to-Image Translation</a></strong></p></li>
